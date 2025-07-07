@@ -1,6 +1,7 @@
 // App.tsx
 import { useState } from "react";
 import TodoItem from "./components/todoItem";
+import "./App.css";
 
 type Todo = {
   id: number;
@@ -24,12 +25,14 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Daftar To-do</h2>
-      {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} onToggle={toggleTodo} />
-      ))}
-    </div>
+    <>
+      <div style={{}}>
+        <h2>Daftar To-do</h2>
+        {todos.map((todo) => (
+          <TodoItem key={todo.id} todo={todo} onToggle={toggleTodo} />
+        ))}
+      </div>
+    </>
   );
 };
 
