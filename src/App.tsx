@@ -1,6 +1,6 @@
 // App.tsx
 import { useState } from "react";
-import TodoItem from "./components/todoItem";
+import TodoItem from "./components/TodoItem";
 import "./App.css";
 
 type Todo = {
